@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Expense Planner',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.deepPurple,
         textTheme: GoogleFonts.interTextTheme(),
       ),
       
