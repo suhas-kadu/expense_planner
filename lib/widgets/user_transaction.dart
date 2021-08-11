@@ -22,9 +22,9 @@ class _UserTransactionState extends State<UserTransaction> {
         amount: amount,
         dateTime: DateTime.now());
 
-  setState(() {
-    _userTransactions.add(_newTransaction);
-  });
+    setState(() {
+      _userTransactions.add(_newTransaction);
+    });
 
   }
 
