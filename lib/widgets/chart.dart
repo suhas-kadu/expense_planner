@@ -27,7 +27,7 @@ class Chart extends StatelessWidget {
     print(DateFormat.E().format(weekDay).toString());
     print(sum.toString());
       return {'day': DateFormat.E().format(weekDay), 'amount':sum};
-    });
+    }).reversed.toList();
   }
 
   double get totalSpending {
