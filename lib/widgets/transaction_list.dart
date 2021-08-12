@@ -31,9 +31,10 @@ class TransactionList extends StatelessWidget {
             ]),
         )
         : Container(
-            height: MediaQuery.of(context).size.height,
+            height: MediaQuery.of(context).size.height/1.5,
             child: ListView.builder(
               itemCount: userTransactions.length,
+              padding: EdgeInsets.only(bottom: 64.0),
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return Card(
