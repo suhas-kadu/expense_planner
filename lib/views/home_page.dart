@@ -41,12 +41,16 @@ class _HomePageState extends State<HomePage> {
             borderRadius: BorderRadius.vertical(top: Radius.circular(8))),
         context: context,
         builder: (context) {
-          return GestureDetector(
-              onTap: () {},
-              behavior: HitTestBehavior.opaque,
-              child: NewTransaction(
-                addNewTx: _addNewTransaction,
-              ));
+          
+          return Padding(
+            padding: MediaQuery.of(context).viewInsets,
+            child: GestureDetector(
+                onTap: () {},
+                behavior: HitTestBehavior.opaque,
+                child: NewTransaction(
+                  addNewTx: _addNewTransaction,
+                )),
+          );
         });
   }
 
